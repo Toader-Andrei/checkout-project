@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <title>HELLO WORLD - 6</title>
+  </head>
+  <body class="bg-light container">
+    <section class="presentation">
+      <div class="text-presentation text-center">
+        <img src="logo.png" />
+        <div>
+          <h2>Checkout form</h2>
+          <p>
+            Below is an example form built entirely with Bootstraps form
+            controls. Each required form group has a validation state that can
+            be triggered by attempting to submit the form without completing it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="complete-address mt-5">
+      <section class="row">
+        <div class="col-12 col-md-8 address-section order-sm-2 order-md-2">
+          <h3 class="mb-2">Billing address</h3>
+            <div class="row">
+              <div class="col-sm-6">
+                <label class="mb-2" for="Fname">First name</label>
+                <input type="text" id="Fname" name="Fname" />
+              </div>
+              <div class="col-sm-6 mb-3">
+                <label class="mb-2" for="Lname">Last name</label>
+                <input type="text" id="Lname" name="Lname" />
+              </div>
+              <div class="col-12">
+                <label class="mb-2" for="username">Username</label>
+                <div class="d-flex mb-3 input-group flex-nowrap">
+                  <span class="username-symbol d-flex">@</span>
+                  <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Username"
+                  />
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <label for="Email" class="mb-2"
+                  >Email <span class="text-muted">(Optional)</span></label
+                >
+                <input
+                  type="text"
+                  id="Email"
+                  name="Email"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label for="Address" class="mb-2">Address</label>
+                <input
+                  type="text"
+                  id="Address"
+                  name="Address"
+                  placeholder="1234 Main St"
+                />
+              </div>
+              <div class="col-12 mb-3">
+                <label for="Address" class="mb-2"
+                  >Address 2 <span class="text-muted">(Optional)</span></label
+                >
+                <input
+                  type="text"
+                  id="Address-2"
+                  name="Address-2"
+                  placeholder="Apartment or suite"
+                />
+              </div>
+              <div class="col-12 col-md-4">
+                <label for="Country" class="mb-2">Country</label>
+                <select name="Country" id="Country" class="w-100">
+                  <option value="Alba">Alba</option>
+                  <option value="Dolj">Dolj</option>
+                  <option value="Cluj">Cluj</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4">
+                <label for="State" class="mb-2">State</label>
+                <select name="State" id="State" class="w-100">
+                  <option value="Alba-Iulia">Alba-Iulia</option>
+                  <option value="Craiova">Craiova</option>
+                  <option value="Cluj">Cluj-Napoca</option>
+                </select>
+              </div>
+              <div class="col-12 col-md-4">
+                <label for="ZIP" class="mb-2">ZIP</label>
+                <input type="text" name="ZIP" id="ZIP" class="w-100" />
+              </div>
+            
+
+            <hr class="my-3" />
+
+            <section class="address-info">
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <input
+                    type="checkbox"
+                    for="shipping-address"
+                    class="check-box"
+                  />
+                  <label for="shipping-address" class="ms-2"
+                    >Shipping address is the same as my billing address</label
+                  >
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <input type="checkbox" for="save-info" class="check-box" />
+                  <label for="save-info" class="ms-2"
+                    >Save this information for next time</label
+                  >
+                </div>
+              </div>
+            </section>
+            <hr class="my-3" />
+
+            <section class="Payment">
+              <h2 class="mb-3">Payment</h2>
+
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <input type="radio" for="Credit-Card" class="check-box" />
+                  <label for="Credit-Card" class="ms-2">Credit-Card</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <input type="radio" for="Debit-Card" class="check-box" />
+                  <label for="Debit-Card" class="ms-2">Debit-Card</label>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="d-flex align-items-center">
+                  <input type="radio" for="PayPal" class="check-box" />
+                  <label for="PayPal" class="ms-2">PayPal</label>
+                </div>
+              </div>
+            </section>
+
+            <div class="col-12 col-md-6">
+              <div class="mt-2">
+                <label class="mb-2" for="Name-on-card">Name on card</label>
+                <input type="text" for="Name-on-card" id="Name-on-card" placeholder="Full name as displayed on card"/>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <label class="mb-2" for="Card-Number">Card Number</label>
+              <input type="text" for="Card-Number" id="Card-Number" />
+            </div>
+
+            <div class=" col-12 col-md-3">
+              <div class="mt-2">
+                <label class="mb-2" for="Expiratione">Expiration</label>
+                <input type="text" id="Expiration" name="Expiration" />
+              </div>
+            </div>
+
+            <div class="col-12 col-md-3">
+              <div class="mt-2">
+                <label class="mb-2" for="CVV">CVV</label>
+                <input type="number" id="CVV" name="CVV" />
+              </div>
+            </div>
+
+            <hr class="my-3" />
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">
+              Continue to checkout
+            </button>
+          </div>
+          </form>
+        </div>
+
+        <div class="col-12 col-md-4 cart-section order-sm-1 order-md-2 mb-sm-5">
+          <div class="title d-flex flex-row justify-content-between">
+            <h3 class="text-primary">Your cart</h3>
+            <p class="text-white rounded-number bg-primary">3</p>
+          </div>
+
+          <section class="row ms-2 me-2 mb-3">
+            <div class="card p-0">
+              <div class="col-12">
+                <div class="border-bottom">
+                  <div class="ms-3 me-3">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h6 class="mt-2 mb-0">Product name</h6>
+                      <p class="text-muted mt-2 mb-0">$12</p>
+                    </div>
+                    <p class="text-muted pt-0">Brief description</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="border-bottom">
+                  <div class="ms-3 me-3">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h6 class="mt-2 mb-0">Second product</h6>
+                      <p class="text-muted mt-2 mb-0">$8</p>
+                    </div>
+                    <p class="text-muted pt-0">Brief description</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="border-bottom">
+                  <div class="ms-3 me-3">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h6 class="mt-2 mb-0">Third item</h6>
+                      <p class="text-muted mt-2 mb-0">$5</p>
+                    </div>
+                    <p class="text-muted pt-0">Brief description</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 bg-light">
+                <div class="border-bottom">
+                  <div class="ms-3 me-3">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h6 class="mt-2 mb-0 text-success">Promo code</h6>
+                      <p class="mt-2 mb-0 text-success">-$5</p>
+                    </div>
+                    <p class="pt-0 text-success">EXAMPLECODE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="border-bottom">
+                  <div class="ms-3 me-3">
+                    <div class="d-flex flex-row justify-content-between">
+                      <h6 class="mt-2 mb-2 fw-normal">Total (USD)</h6>
+                      <p class="fw-bold mt-2 mb-2">$20</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="redeem-code">
+            <div class="col-12">
+              <div class="ms-2 me-2">
+                <div class="card">
+                  <div class="ms-2 me-2 mb-3 mt-3">
+                    <div class="d-flex input-group flex-nowrap">
+                      <input
+                        type="text"
+                        for="Promo-Code"
+                        placeholder="Promo code"
+                      />
+                      <button type="submit" class="btn btn-secondary">
+                        Redeem
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <footer class="my-5 pt-5 text-muted text-center">
+      <p class="mb-1">© 2017-2022 Company Name</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

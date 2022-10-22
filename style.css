@@ -1,0 +1,38 @@
+.presentation .text-presentation img {
+    width: 70px;
+    height: 60px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.presentation .text-presentation p {
+    font-size: 27px;
+    font-weight: 300;
+}
+
+.complete-address .title .rounded-number { 
+    padding: 5px 12px;
+    border-radius: 60%;
+    font-weight: 800;  
+}
+
+.complete-address .username-symbol {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    align-items: center;
+    padding: 5px 12px;
+}
+
+input, select {
+    width: 100%;
+    border-radius: 5px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+}
+
+.check-box {
+    width: 14px;
+    height: 14px;
+}
+
+    
